@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-JoinTheFunRails::Application.config.secret_key_base = '2f7e14c5d480bb3c9593b253a2b3c0274f9666817456b69ad0f157454d6a996dc363be64ac6509b6f577c485e9f8ef08d8e710535dfa6cdae5ad8070757f19cf'
+# secret_key_base is now managed by Rails credentials

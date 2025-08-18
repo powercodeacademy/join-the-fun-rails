@@ -1,2 +1,2 @@
-class Taxi < ActiveRecord::Base
+class Taxi < ApplicationRecord
 end

@@ -1,2 +1,2 @@
-class Passenger < ActiveRecord::Base
+class Passenger < ApplicationRecord
 end
