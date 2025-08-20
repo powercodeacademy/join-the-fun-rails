@@ -5,14 +5,18 @@ describe Ride do
 
   it 'belongs to a passenger' do
     passenger = Passenger.create
+    taxi = Taxi.create
     ride.passenger = passenger
+    ride.taxi = taxi
     ride.save
 
     expect(passenger.rides).to include(ride)
   end
 
   it 'belongs to a taxi' do
+    passenger = Passenger.create
     taxi = Taxi.create
+    ride.passenger = passenger
     ride.taxi = taxi
     ride.save
 
