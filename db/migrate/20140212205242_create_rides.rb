@@ -1,4 +1,4 @@
-class CreateRides < ActiveRecord::Migration[5.0]
+class CreateRides < ActiveRecord::Migration[7.1]
   def change
     create_table :rides do |t|
       t.timestamps null: false

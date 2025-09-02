@@ -2,19 +2,20 @@ source 'https://rubygems.org'
 
 ruby '3.3.5'
 
-gem 'rails', '~> 7.1.0'
-gem 'puma', '~> 6.0'
-gem 'webrick'
-gem 'sqlite3', '~> 1.6'
 gem 'bootsnap', '>= 1.4.4', require: false
 gem 'ostruct'
+gem 'puma', '~> 6.0'
+gem 'rails', '~> 7.1.0'
+gem 'sqlite3', '~> 1.6'
+gem 'webrick'
 
 group :development, :test do
-  gem 'rspec-rails', '~> 6.0'
   gem 'capybara'
   gem 'database_cleaner-active_record'
+  gem 'pry'
   gem 'rack_session_access'
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'rspec-rails', '~> 6.0'
+  gem 'rubocop', require: false
 end
 
 group :development do
