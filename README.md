@@ -7,8 +7,7 @@ start developing the application's domain model!
 
 Three basic models have already been created, `Passenger`, `Ride`, and `Taxi`.
 Just run `bin/rails db:migrate` and `bin/rails db:migrate RAILS_ENV=test` to apply the
-migrations to the development and test databases, respectively. `Ride` is the join table
-between `Taxi` and `Passenger`
+migrations to the development and test databases, respectively.
 
 The next step is set up a `has_many :through` relationship between
 these three models so that we can keep track of who's driving who around.
@@ -30,10 +29,9 @@ add the required columns to establish this relationship.
 
 Check out the join table section in the [Active Record Association Rails Guide](http://guides.rubyonrails.org/association_basics.html#the-has-many-through-association).
 
-Run the tests using the `rspec` or `learn test` command.
+Run the tests using the `bin/rspec` command.
 
 ## Resources
 
 - [Rails Guides](http://guides.rubyonrails.org/)
 - [Active Record Associations: Join Table section](http://guides.rubyonrails.org/association_basics.html#the-has-many-through-association)
-- [Active Record Migrations: Join Table section](https://guides.rubyonrails.org/active_record_migrations.html#creating-associations)
